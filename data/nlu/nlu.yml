@@ -2,284 +2,274 @@ version: "2.0"
 nlu:
 - intent: check_human
   examples: |
-    - are you a bot?
-    - am i speaking to an ai?
-    - are you a human or a bot?
-    - are you real? 
-    - are you virtual? 
-    - are you an ai?
-    - aren't you a bot
-    - are you a chatbot
-    - are you a rasa bot?
-    - are you a real bot?
-    - are you a robot
-    - are you ai
-    - are you artificial
-    - are you artificial intelligence
-    - are you real
-    - are you really a bot
-    - are you robot
-    - are you sure that you're a bot?
+    - Jesteś botem?
+    - czy mówię do ai?
+    - jesteś człowiekiem czy botem?
+    - czy jesteś prawdziwy?
+    - czy jesteś wirtualny?
+    - jesteś ai?
+    - nie jesteś botem
+    - jesteś chatbotem
+    - jesteś robotem rasa?
+    - jesteś prawdziwym botem?
+    - Jesteś robotem
+    - czy jesteś ai
+    - czy jesteś sztuczny?
+    - czy jesteś sztuczną inteligencją?
+    - czy jesteś prawdziwy
+    - czy naprawdę jesteś botem
+    - czy jesteś robotem?
+    - jesteś pewien, że jesteś botem?
     - bot?
 - intent: affirm
   examples: |
-    - indeed
-    - correct
-    - that sounds good
-    - yes
-    - yess please
-    - of course
-    - yup
-    - yeah
-    - yes please
-    - yes plz
-    - Sure
-    - Ok
-    - sweet
-    - cool,
-    - yes...
-    - y
-    - ok
-    - ye
-    - okay
-    - That would be great
-    - YES
-    - YUP
-    - Yea
-    - Yeah
-    - Yeah sure
-    - Yep
-    - Yep that's fine
-    - Yep!
-    - Yepp
-    - Yes
-    - Yes I do
-    - Yes please
-    - Yes please!
-    - Yes, I accept
+    - Byłoby świetnie
+    - Dobrze
+    - Pewnie
+    - Słodkie
+    - TAK
+    - Tak
+    - Tak akceptuję
+    - Tak proszę
+    - Tak proszę!
+    - Tak!
+    - Tak, jasne
+    - Tak, w porządku
+    - chłodny,
+    - dobrze
+    - oczywiście
+    - poprawny
+    - tak
+    - tak proszę
+    - tak...
+    - to brzmi dobrze
+    - w porządku
+    - w rzeczy samej
 - intent: ask_transfer_charge
   examples: |
-    - Will I be charged for transferring money
-    - do transfers cost something?
-    - is there a transfer charge?
-    - Is there a charge
-    - will i be charged for a transaction?
-    - do xfers cost something?
-    - is there a transfer fee
-    - is there a xfer fee
-    - how much is the transfer fee
-    - whats the cost of transferring money
-    - what am I charged upon money transfer
-    - are you gonna bill me for this exchange
-    - whats the xfer price for this account
-    - okay but how much to move this money?
-    - how much is the fee to shift my money around
-    - if I send money to someone will I be charged extra for that?
-    - is there a charge when I send money to someone
-    - what is the fee for sending money to someone else
-    - I sent money to my friend will I be charged extra for that
-    - what is the percentage fee for transactions to another person
-    - are there any transaction fees or charges I should know about?
-    - tell me about transfer fees
+    - Czy będę obciążony kosztami przelewu?
+    - czy przelewy coś kosztują?
+    - czy jest opłata za przelew?
+    - Czy jest opłata?
+    - czy zostanie naliczona opłata za transakcję?
+    - czy xfery coś kosztują?
+    - czy jest opłata za przelew?
+    - czy jest opłata xfer?
+    - ile wynosi opłata za przelew
+    - jaki jest koszt przelewu pieniędzy
+    - ile jestem obciążany przy przelewie
+    - czy obciążysz mnie rachunkiem za tę wymianę?
+    - jaka jest cena xfer dla tego konta?
+    - ok ale ile przenieść te pieniądze?
+    - ile wynosi opłata za przenoszenie pieniędzy my
+    - jeśli wyślę komuś pieniądze, czy zostanie naliczona dodatkowa opłata za to?
+    - czy jest naliczana opłata, gdy wysyłam komuś pieniądze?
+    - jaka jest opłata za wysłanie pieniędzy komuś innemu
+    - wysłałem pieniądze do znajomego, czy będę za to obciążony dodatkową opłatą
+    - jaka jest opłata procentowa za transakcje na rzecz innej osoby another
+    - czy są jakieś opłaty transakcyjne, o których powinienem wiedzieć?
+    - powiedz mi o opłatach za przelew
 - intent: check_balance
   examples: |
-    - How much money is on my account?
-    - How much money is on my [bank](account_type) account?
-    - what's my [balance](amount-of-money)?
-    - what's my [current balance](amount-of-money)?
-    - What's left on that account?
-    - How much do I have on that account?
-    - What's the [balance](amount-of-money) on that account?
-    - How much money is left on that account?
-    - what is my account [balance](amount-of-money)
-    - what's my account [balance](amount-of-money)?
-    - what's my account [balance](amount-of-money)
-    - whats my account [balance](amount-of-money)
-    - what is my [bank](account_type) account [balance](amount-of-money)
-    - what's my [bank](account_type) account [balance](amount-of-money)?
-    - what's my [bank](account_type) account [balance](amount-of-money)
-    - whats my [bank](account_type) account [balance](amount-of-money)
-    - What's my [credit card](account_type) [balance](amount-of-money)
-    - What's my [credit](account_type) [balance](amount-of-money)
-    - How much money do I owe on my [credit cards](account_type)
-    - Show me my [credit card](account_type) [balance](amount-of-money)
-    - What [credit](account_type) accounts do I have
-    - Show me my [credit](account_type) accounts
-    - Whats the [balance](amount-of-money) on my [credit](account_type) account
-    - What's my [credit](account_type) account
-    - What's my [emblem](credit_card) [card](account_type) [balance](amount-of-money)
-    - Show me my [iron bank](credit_card) [balance](amount-of-money)
-    - What's my [justice bank](credit_card) [balance](amount-of-money)
-    - What's the [balance](amount-of-money) on the [justice bank](credit_card) account
-    - what's my [emblm](credit_card) [credit card](account_type) [balance](amount-of-money)?
-    - what's my [credit card](account_type) [balance](amount-of-money)?
-    - what's my [credit card](account_type) account [balance](amount-of-money)?
-    - What is my [emblem](credit_card) [card](account_type) [balance](amount-of-money)?
-    - whats my [credit card](account_type) [balance](amount-of-money)
-    - What is my [emblem](credit_card) [balance](amount-of-money)?
-    - whats my [emblm](credit_card) [card](account_type) [balance](amount-of-money)?
-    - what's my [embelm](credit_card)'s [card](account_type) [balance](amount-of-money)?
-    - what's my [emblm](credit_card) account [balance](amount-of-money)?
-    - How much money have i spent lately>
-    - I should check my [credit card]{"entity": "account_type", "value": "credit"} [balance](amount-of-money) [first](account_type)
-    - check my [credit card]{"entity": "account_type", "value": "credit"} [balance](amount-of-money)
-    - check my [credit card]{"entity": "account_type", "value": "credit"} [balance](amount-of-money) [first](account_type)
-    - Can you tell me my account [balance](amount-of-money)?
-    - Hello, I would like to know how much money is in much money is in my account
-    - hi, whats my account bal please
-    - so.... what's my [balance](amount-of-money)?
-    - whats my [current balance](amount-of-money)
-    - What's my [balance](amount-of-money)?
-    - How much money do I have?
-    - Yeah, I like coffee 👀 But how much money do I have?
-    - Yeah, I know 😀 Since it's so nice: How much money do I have?
-    - what places have I spent money?
-    - Wait, I'll have to check my balance first. Can you do that please?
-    - Hi, I need to know how much money is in my [checking](account_type) account
-    - Balance please
+    - Ile pieniędzy jest na moim koncie?
+    – Ile pieniędzy znajduje się na moim koncie [bank](account_type) ?
+    - jakie jest moje [balance](amount-of-money)?
+    – jakie jest moje [current balance](amount-of-money)?
+    - Co zostało z tego konta?
+    - Ile mam na to konto?
+    – Jakie jest [balance](amount-of-money) na tym koncie?
+    - Ile pieniędzy zostało na tym koncie?
+    - jaki jest [balance](amount-of-money) na moim koncie ?
+    - ile mam [balance](amount-of-money) na moim koncie ?
+    - jaki jest [balance](amount-of-money) na moim na koncie [bank](account_type)  ?
+    - ile mam [balance](amount-of-money) na koncie [bank](account_type) ?
+    - ile mam [balance](amount-of-money) na [credit card](account_type) ?
+    - Jakie jest moje [balance](amount-of-money)?
+    - Jakie jest [balance](amount-of-money)?
+    - Jakie jest [balance](amount-of-money) na [credit](account_type)
+    - Ile pieniędzy jestem winien na moim [credit cards](account_type)
+    - Pokaż mi moje [credit card](account_type) [balance](amount-of-money)
+    - Jakie [credit](account_type) konta posiadam?
+    - Pokaż mi konto [credit](account_type)
+    - Jaki jest [balance](amount-of-money) na moim koncie [credit](account_type)
+    - Jakie mam konto [credit](account_type)
+    - Jakie mam [emblem](credit_card) [card](account_type) [balance](amount-of-money)
+    - Pokaż mi moje [iron bank](credit_card) [balance](amount-of-money)
+    - Jakie mam [justice bank](credit_card) [balance](amount-of-money)
+    - Jakie mam [balance](amount-of-money) na koncie [justice bank](credit_card)
+    - Jakie mam [emblm](credit_card) [credit card](account_type) [balance](amount-of-money)?
+    - Jakie mam [credit card](account_type) [balance](amount-of-money)?
+    - Jakie mam [credit card](account_type) na koncie [balance](amount-of-money)?
+    - Jakie mam [emblem](credit_card) [card](account_type) [balance](amount-of-money)?
+    - Jakie mam [credit card](account_type) [balance](amount-of-money)
+    - Jakie mam [emblem](credit_card) [balance](amount-of-money)?
+    - Jakie mam [emblm](credit_card) [card](account_type) [balance](amount-of-money)?
+    - Jakie mam [embelm](credit_card)'s [card](account_type) [balance](amount-of-money)?
+    - Jakie mam [emblm](credit_card) konto [balance](amount-of-money)?
+    - Ile ostatnio wydałem pieniędzy>
+    - Powinienem sprawdzić mój [credit card]{"entity": "account_type", "value": "credit"} [balance](amount-of-money) [first](account_type)
+    - Sprawdź mój [credit card]{"entity": "account_type", "value": "credit"} [balance](amount-of-money)
+    - Sprawdź mój [credit card]{"entity": "account_type", "value": "credit"} [balance](amount-of-money) [first](account_type)
+    - Czy możesz mi powiedzieć jakie jest [balance](amount-of-money) na moim konto?
+    - Witam, chciałbym wiedzieć, ile pieniędzy jest w dużej ilości pieniędzy na moim koncie
+    - więc.... jakie jest moje [balance](amount-of-money)?
+    - jakie jest moje [current balance](amount-of-money)
+    - jakie jest moje [balance](amount-of-money)?
+    - Ile mam pieniędzy?
+    - Tak, lubię kawę 👀 Ale ile mam pieniędzy?
+    - Tak, wiem 😀 Skoro jest tak fajnie: Ile mam pieniędzy?
+    - w jakie miejsca wydałem pieniądze?
+    - Czekaj, najpierw muszę sprawdzić saldo. Czy możesz to zrobić, proszę?
+    - Cześć, muszę wiedzieć, ile pieniędzy jest w moim koncie [checking](account_type)
+    - Proszę o saldo
 - intent: check_earnings
   examples: |
-    - How much money went into my account last month?
-    - How much money did I make last year?
-    - What did I earn last month?
-    - How much did I make last month?
-    - How much money did I make last week?
-    - how much was deposited in my account last month?
-    - how much was deposited in my account in the last two weeks?
-    - check deposits for last week
-    - total deposits over last year
-    - how much was deposited in January
-    - how much money have I earned?
-    - what did I earn?
-    - How much have i earned?
-    - how much did I make
-    - am I rich yet?
-    - am I a millionaire
-    - how much cash is rolling through my account
-    - how much money is in the money making machine account?
-    - what did I make in the last year?
-    - show me how much I've earned in the last week
-    - can i afford to go on vacation
-    - rent is due soon how much do I have in my account
+    - Ile pieniędzy wpłynęło na moje konto w zeszłym miesiącu?
+    - Ile pieniędzy zarobiłem w zeszłym roku?
+    - Co zarobiłem w zeszłym miesiącu?
+    - Ile zarobiłem w zeszłym miesiącu?
+    - Ile pieniędzy zarobiłem w zeszłym tygodniu?
+    - ile wpłynęło na moje konto w zeszłym miesiącu?
+    - ile wpłynęło na moje konto w ciągu ostatnich dwóch tygodni?
+    - sprawdź wpłaty za ostatni tydzień
+    - suma depozytów w ciągu ostatniego roku
+    - ile zdeponowano w styczniu
+    - ile zarobiłem pieniędzy?
+    - co zarobiłem?
+    - Ile zarobiłem?
+    - ile zarobiłem
+    - czy jestem już bogaty?
+    - czy jestem milionerem?
+    - ile gotówki przepływa przez moje konto
+    - ile pieniędzy jest na koncie maszyny do robienia pieniędzy?
+    - co zrobiłem w zeszłym roku?
+    - pokaż ile zarobiłem w ostatnim tygodniu
+    - czy stać mnie na wyjazd na wakacje?
+    - czynsz jest należny wkrótce ile mam na koncie
 - intent: deny
   examples: |
-    - not really
-    - no
-    - I don't think so
-    - never
-    - no way
-    - nope
-    - no thanks
-    - I dunno
-    - Nothing!
-    - nevermind
+    - nie całkiem
+    - nie
+    - nie sądzę
+    - nigdy
+    - nie ma mowy
+    - nie
+    - Nie, dziękuję
+    - Nie wiem
+    - Nic!
+    - nieważne
     - n
-    - i decline
-    - i don not like this
-    - i don't think so
-    - i don't want either of those
-    - i don't want to
-    - i don't want to give you my email
-    - i dont want to
-    - i dont want to accept :P lol
-    - i guess it means - no
-    - i'm afraid not
-    - i'm not sure
+    - odmawiam
+    - nie lubię tego
+    - nie sądzę
+    - nie chcę żadnego z nich
+    - nie chcę
+    - nie chcę dawać ci mojego e-maila
+    - nie chcę
+    - nie chcę akceptować :P lol
+    - chyba to znaczy - nie
+    - obawiam się, że nie
+    - Nie jestem pewny
 - intent: goodbye
   examples: |
-    - see you later
-    - goodbye
-    - i'm done
-    - quit
-    - stop
-    - bye
+    - do zobaczenia później
+    - do widzenia
+    - skończyłem
+    - porzucić
+    - zatrzymać
+    - PA
     - Adios
-    - BYEE
-    - GOODBYE
-    - Thanks a lot. See ya later
-    - have a good day. time to go, bye
-    - bye bye
-    - ok i gtg
-    - bye bye bot
-    - bye for now
-    - bye udo
-    - bye was nice talking to you
-    - bye!
-    - byee
-    - catch you later
-    - ciao
+    - PAWĘ
+    - DO WIDZENIA
+    - Wielkie dzięki. Do zobaczenia później
+    - miłego dnia. czas iść, pa
+    - PA pa
+    - ok ja gtg
+    - pa pa bocie
+    - na razie
+    - pa udo
+    - pa było miło z tobą rozmawiać
+    - PA!
+    - pa
+    - złapię cię później
+    - cześć
     - cya
-    - farewell
-    - good bye
-    - good bye rasa bot!
-    - good night
-    - goodbye
-    - goodbye.
-    - goodnight
-    - gotta go
+    - pożegnanie
+    - do widzenia
+    - żegnaj rasa bocie!
+    - dobranoc
+    - do widzenia
+    - do widzenia.
+    - dobranoc
+    - muszę iść
 - intent: greet
   examples: |
-    - yo
-    - good morning
-    - hi
-    - hey there
-    - hey
-    - good evening
-    - hello
-    - Hello?
-    - HEY
-    - hello are you still there
-    - hallo
-    - HI
-    - Hey
-    - Hi
-    - hi!
-    - hello there
-    - hi there
-    - Hello
-    - hello its ella
+    - Siema
+    - dzień dobry
+    - cześć
+    - No hej
+    - Hej
+    - dobry wieczór
+    - cześć
+    - Cześć?
+    - HEJ
+    - Witam jesteś tam jeszcze
+    - cześć
+    - CZEŚĆ
+    - Hej
+    - Cześć
+    - cześć!
+    - witam
+    - cześć
+    - Cześć
+    - witam jego ella
     - Hola.
-    - welcome
-    - howdy
-    - good day
+    - Witamy
+    - cześć
+    - dobry dzień
 - intent: inform
   examples: |
-    - $10
-    - 5000
-    - 500
-    - $100
-    - $500
-    - 100 dollars
-    - 1000 dollars
-    - tomorrow
-    - next week
-    - yesterday
-    - for today
-    - last week
-    - the past month
-    - the past two days
-    - the last two weeks
-    - at [amazon](vendor_name)
+    - 10 złotych
+    - 5000 złotych
+    - 500 złotych
+    - 100 złotych
+    - 500 złotych
+    - 10 złotych
+    - PLN 5000
+    - PLN 500
+    - PLN 100
+    - PLN 500
+    - 100 dolarów
+    - 1000 dolarów
+    - jutro
+    - w następnym tygodniu
+    - wczoraj
+    - na dzisiaj
+    - zeszły tydzień
+    - ostatni miesiąc
+    - ostatnie dwa dni
+    - ostatnie dwa tygodnie
+    - na [amazon](vendor_name)
     - [starbucks](vendor_name)
-    - at [target](vendor_name)
-    - at [starbucks](vendor_name)
+    - na [target](vendor_name)
+    - na [starbucks](vendor_name)
     - [target](vendor_name)
     - [Amazon](vendor_name)
     - [Starbucks](vendor_name)
     - [Target](vendor_name)
-    - I want to pay the [current balance](amount-of-money)
+    - Chciałbym zapłacić [current balance](amount-of-money)
     - [current balance](amount-of-money)
     - [full](amount-of-money)
-    - in [full](amount-of-money)
-    - the [full balance](amount-of-money)
+    - w [full](amount-of-money)
+    - [full balance](amount-of-money)
     - [minimum balance](amount-of-money)
-    - I want to pay the [minimum balance](amount-of-money)
-    - the [current balance](amount-of-money)
-    - the [minimum balance](amount-of-money)
-    - my [minimum balance](amount-of-money)
-    - my [current balance](amount-of-money)
+    - Chcę zapłacić [minimum balance](amount-of-money)
+    - [current balance](amount-of-money)
+    - [minimum balance](amount-of-money)
+    - Mój [minimum balance](amount-of-money)
+    - Mój [current balance](amount-of-money)
     - [emblem](credit_card) [card](account_type)
-    - all [cards](account_type)
+    - Wsszystkie [cards](account_type)
     - [iron bank](credit_card) [card](account_type)
     - [justice bank](credit_card) [card](account_type)
     - [emblem](credit_card)
@@ -291,34 +281,34 @@ nlu:
     - [emblem](credit_card) [credit card](account_type)
     - [iron bank](credit_card) [credit card](account_type)
     - [justice bank](credit_card) [credit card](account_type)
-    - my [emblem](credit_card) [credit card](account_type)
-    - my [iron bank](credit_card) [credit card](account_type)
-    - my [justice bank](credit_card) [credit card](account_type)
-    - my [emblem](credit_card) [card](account_type)
-    - my [iron bank](credit_card) [card](account_type)
-    - my [justice bank](credit_card) [card](account_type)
-    - towards my [emblem](credit_card) [card](account_type)
-    - towards my [iron bank](credit_card) [card](account_type)
-    - towards my [justice bank](credit_card) [card](account_type)
-    - for sunday
-    - for friday
-    - for tomorrow
-    - for saturday
-    - I want to pay the [minimum balance](amount-of-money) on my [emblem](credit_card) [credit card](account_type) today
-    - today
-    - Please schedule it for the first of next month
-    - a hundred dollars
+    - Moja [emblem](credit_card) [credit card](account_type)
+    - Moja [iron bank](credit_card) [credit card](account_type)
+    - Moja [justice bank](credit_card) [credit card](account_type)
+    - Moja [emblem](credit_card) [card](account_type)
+    - Moja [iron bank](credit_card) [card](account_type)
+    - Moja [justice bank](credit_card) [card](account_type)
+    - Do mojej [emblem](credit_card) [card](account_type)
+    - Do mojej [iron bank](credit_card) [card](account_type)
+    - Do mojej [justice bank](credit_card) [card](account_type)
+    - Na niedzielę
+    - Na piątek
+    - Na jutro
+    - Na sobotę
+    - Chcę spłacić [minimum balance](amount-of-money) na mojej [emblem](credit_card) [credit card](account_type) dzisiaj
+    - Dzisiaj
+    - Zaplanuj to na pierwszy dzień przyszłego miesiąca
+    - Sto dolarów
     - [mastercard](credit_card)
     - [visa](credit_card)
     - [american express](credit_card)
-    - my [rasa](credit_card) account
-    - my [credit card]{"entity": "account_type", "value": "credit"} account ending in 4321
-    - My [Visa](credit_card) account
-    - A friend.
+    - Moje [rasa](credit_card) account
+    - Moja [credit card]{"entity": "account_type", "value": "credit"} account ending in 4321
+    - Moje [Visa](credit_card) account
+    - Dodaj przyjaciela.
     - [Alexandra](PERSON)?
-    - today please
+    - Dzisiaj proszę
     - [Iron Bank](credit_card)
-    - My [visa](credit_card)
+    - Moja [visa](credit_card)
     - [Bob](PERSON)
     - [bill](PERSON)
     - [anusha](PERSON)
@@ -329,9 +319,9 @@ nlu:
     - [darnell](PERSON)
     - [Guangchen](PERSON)
     - [cheng](PERSON)
-    - to my [brother](PERSON)
-    - to my [sister](PERSON)
-    - my [dad](PERSON)
+    - Do mojego [brother](PERSON)
+    - Do mojej [sister](PERSON)
+    - Mój [dad](PERSON)
     - William Baker
     - Evan Oslo
     - Lisa Macintyre
@@ -341,15 +331,15 @@ nlu:
     - Katy Parrow
     - Percy please
     - Laura Schilling
-    - In that case, let's go with Percy
-    - My chase
+    - W takim razie chodźmy z Percym
+    - Mój pościg
     - Jane
     - Melinda
     - Sara
-    - my wife's
+    - Mojej żony
     - Andreas
     - htthis weekend
-    - all of them
+    - Wszyscy
     - Darren Smith
     - Percy
     - percy donald
@@ -357,277 +347,275 @@ nlu:
     - [Gringtos](credit_card)
 - intent: pay_cc
   examples: |
-    - I would like to pay the [minimum balance](amount-of-money) on my [embelm](credit_card) [card](account_type)
-    - I want to pay my [credit card](account_type)
-    - I want to pay my [card](account_type)
-    - Pay my [card](account_type)
-    - I want to pay my [justice bank](credit_card) bill
-    - Pay my [discover](credit_card)
-    - I want to pay my [iron bank](credit_card) bill
-    - Pay my [visa](credit_card)
-    - I want to pay my [visa](credit_card) bill
-    - Pay my [mastercard](credit_card)
-    - I want to pay my [MasterCard](credit_card) bill
-    - I want to pay my [credit card](account_type) bill
-    - I want to pay the [current balance](amount-of-money) on my [credit card](account_type)
-    - can you help me pay the [current balance](amount-of-money) on my [credit card](account_type)
-    - i want to pay off my [credit card](account_type)
-    - I want to pay off my [credit card](account_type)
-    - i want to pay my [credit card](account_type)
-    - i want to pay off my [emblem](credit_card) [credit card](account_type)
-    - I want to pay my [current balance](amount-of-money) on my [embelm](credit_card) [credit card](account_type)
-    - i want to pay my [current balance](amount-of-money) on my [emblem](credit_card) [credit card](account_type)
-    - I want to pay $500 on my [emblem](credit_card) [credit card](account_type) on Sunday
-    - I want to pay my [current balance](amount-of-money) on my [emblem](credit_card) [credit card](account_type) today
-    - i need to pay off my [emblm](credit_card) [credit card](account_type)
-    - Please schedule  a payment towards my [credit card](account_type) for April 12th
-    - Can I schedule a payment towards my [credit card](account_type) for tomorrow?
-    - Pay off my [minimum balance](amount-of-money) please
-    - i would like to pay $1200 to my [credit card]{"entity": "account_type", "value": "credit"}
-    - I would also like to pay my [visa](credit_card) bill
-    - Pay off my [credit card]{"entity": "account_type", "value": "credit"}, please
-    - I guess it is. Since it's so much, let's pay off my [credit](account_type)
-    - Let's pay that [credit card]{"entity": "account_type", "value": "credit"} bill
-    - I want to pay 100 dollars toward my [Emblem](credit_card) [card](account_type), tomorrow
-    - pay 100 towards [emblem](credit_card) [card](account_type), tomorrow
-    - id like to pay my bill
-    - could I pay off my [credit card]{"entity": "account_type", "value": "credit"}?
-    - pay off my [credit card]{"entity": "account_type", "value": "credit"}
-    - i wanna pay my [credit card]{"entity": "account_type", "value": "credit"}
-    - pay a bill
-    - can I pay my [card]{"entity": "account_type", "value": "credit"}?
+    - Chciałbym spłacić [minimum balance](amount-of-money) na mojej [embelm](credit_card) [card](account_type)
+    - Chciałbym spłacić [credit card](account_type)
+    - Chce spłacić [card](account_type)
+    - Spłać [card](account_type)
+    - Chciałbym zapłacić rachunek [justice bank](credit_card)
+    - Spłać [discover](credit_card)
+    - Chce zapłacić rachunek [iron bank](credit_card)
+    - Zapłać [visa](credit_card)
+    - Chce zapłacić rachunek [visa](credit_card)
+    - płać [mastercard](credit_card)
+    - Chce zapłacić [MasterCard](credit_card) bill
+    - Chce zapłaćić rachunek [credit card](account_type)
+    - Chce spłacić [current balance](amount-of-money) na mojej [credit card](account_type)
+    - Czy możesz mi pomóc zapłacić? [current balance](amount-of-money) na mojej [credit card](account_type)
+    - Chcę spłacić mój [credit card](account_type)
+    - Chcę spłacić mój [credit card](account_type)
+    - Chcę spłacić mój [credit card](account_type)
+    - Chcę spłacić mój[emblem](credit_card) [credit card](account_type)
+    - Chcę spłacić mój[current balance](amount-of-money) na mojej [embelm](credit_card) [credit card](account_type)
+    - Chcę spłacić mój [current balance](amount-of-money) na mojej [emblem](credit_card) [credit card](account_type)
+    - Chcę spłacić mój 500 zł [emblem](credit_card) [credit card](account_type) w Niedzielę
+    - Chcę spłacić mój [current balance](amount-of-money) na mojej [emblem](credit_card) [credit card](account_type) dzisiaj
+    - Chcę spłacić mój [emblm](credit_card) [credit card](account_type)
+    - Proszę zaplanować płatność na rzecz mojej [credit card](account_type) na 12 kwietnia
+    - Proszę zaplanować płatność na rzecz mojej [credit card](account_type) na jutro?
+    - Spłać proszę [minimum balance](amount-of-money)
+    - chciałbym zapłacić 1200 zł moją [credit card]{"entity": "account_type", "value": "credit"}
+    - Chciałbym również zapłacić za rachunek moją [visa](credit_card)
+    - Spłać moją [credit card]{"entity": "account_type", "value": "credit"}, proszę
+    - Zapłaćmy ten rachunek za pomocą [credit card]{"entity": "account_type", "value": "credit"}
+    - Chcę spłacić 100 złotych na mojej [Emblem](credit_card) [card](account_type), jutro
+    - Chciałbym zapłacić mój rachunek
+    - Czy mogę spłacić moją [credit card]{"entity": "account_type", "value": "credit"}?
+    - Spłać moją [credit card]{"entity": "account_type", "value": "credit"}
+    - Chciałbym zapłacić [credit card]{"entity": "account_type", "value": "credit"}
+    - Zapłacić rachunek
+    - Czy mógłbym zapłacić [card]{"entity": "account_type", "value": "credit"}?
 - intent: search_transactions
   examples: |
-    - how much did I spend at [Target](vendor_name) this week?
-    - what is my typical spending at [Amazon](vendor_name)?
-    - I want to check my spending history
-    - how much did I spend at [Starbucks](vendor_name) last week?
-    - I need to check my spending history
-    - I want to check my spending
-    - I want to check my spending history at [starbucks](vendor_name)
-    - i want to check my spending history
-    - i want to see my transaction history
-    - I want to search my past transactions
-    - can I search my transaction history
-    - can I look at past transactions
-    - I want to search my transactions with [amazon](vendor_name)
-    - can i seem my transactions with [target](vendor_name)
-    - how much did i spend at [starbucks](vendor_name) last month?
-    - what did i spend last month?
-    - How much did I spend last month?
-    - What did I spend at [Legoland](vendor_name) last month?
-    - What did I spend at [Legoland](vendor_name) last year?
-    - how much did i spend at [starbucks](vendor_name) last year
-    - Yes! How much did I spend on [Starbucks](vendor_name) last month?
-    - How much did I spend at Burger King last month?
-    - what places have I spent money?
-    - What did I spend at [Starbucks](vendor_name) in may?
-    - How much money did I lose to [starbucks](vendor_name) in may?
-    - Oh how much did I actually spend at [target](vendor_name) last month? I'd love to know.
-    - Can you tell me how much I spent at [Ikea](vendor_name) this month?
-    - Can you tell me how much I spent at coffeeshops this month?
-    - Can you tell me how much I spent on coffee this month?
-    - What did I spend at [Costco](vendor_name) last month?
-    - what did I spend at [target](vendor_name) last month
-    - where did I spend the most money last month?
+    - ile wydałem na [Target](vendor_name) this week?
+    - jakie są moje typowe wydatki w [Amazon](vendor_name)?
+    - Chcę sprawdzić historię moich wydatków
+    - ile wydałem na [Starbucks](vendor_name) last week?
+    - Muszę sprawdzić historię moich wydatków
+    - Chcę sprawdzić moje wydatki
+    - Chcę sprawdzić historię moich wydatków na [starbucks](vendor_name)
+    - chcę sprawdzić historię moich wydatków
+    - chcę zobaczyć moją historię transakcji
+    - Chcę przeszukać moje przeszłe transakcje
+    - czy mogę przeszukać moją historię transakcji?
+    - czy mogę spojrzeć na przeszłe transakcje?
+    - Chcę wyszukać moje transakcje za pomocą [amazon](vendor_name)
+    - czy mogę zobaczyć moje transakcje z [target](vendor_name)
+    - ile wydałem w zeszłym miesiącu na [starbucks](vendor_name) ?
+    - co spędziłem w zeszłym miesiącu?
+    - Ile wydałem w zeszłym miesiącu?
+    - Na co wydałem w zeszłym miesiacu na [Legoland](vendor_name) ?
+    - Na co wydałem pieniadze w [Legoland](vendor_name) w zeszłym roku?
+    - ile wydałem w zesszłym roku w [starbucks](vendor_name) ?
+    - Tak! Ile wydałem na [Starbucks](vendor_name) w zeszłym miesiącu?
+    - Ile wydałem w Burger Kingu w zeszłym miesiącu?
+    - w jakie miejsca wydałem pieniądze?
+    - Na co wydałem pieniądze w [Starbucks](vendor_name) w maju?
+    - Ile pieniędzy straciłem w [starbucks](vendor_name) w maju?
+    - Och, ile właściwie wydałem na [target](vendor_name) w ostatnim miesiącu? Chciałbym wiedzieć.
+    - Czy możesz mi powiedzieć, ile wydałem na [Ikea](vendor_name) w tym mieiącu?
+    - Czy możesz mi powiedzieć, ile wydałem w tym miesiącu w kawiarniach?
+    - Czy możesz mi powiedzieć, ile wydałem w tym miesiącu na kawę?
+    - Za co płaciłem w [Costco](vendor_name) w zeszłym mieiacu?
+    - Za co płaciłem w  [target](vendor_name) w zeszłym miesiacu?
+    - gdzie wydałem najwięcej pieniędzy w zeszłym miesiącu?
 - intent: thankyou
   examples: |
-    - thank you goodbye
-    - okay thank you goodbye
-    - thank you bye
-    - um okay thank you good bye
-    - thank you
-    - and thats all thank you and good bye
-    - okay thank you
-    - thanks
-    - thanks goodbye
-    - thank you and good bye
-    - Thanks!
-    - Awesome, you are a good bot!
-    - great!
-    - I see, thanks
-    - Oh thats good!
-    - it's good :-)
-    - thnaks
-    - good job bot
-    - great
-    - thanks for the help
-    - thanks you
-    - thanks!
-    - thankyou
-    - thnks
-    - thx
-    - thanks for your information
-    - thanks f
+    - Dziękuję do widzenia
+    - ok, dziękuję do widzenia
+    - Dziękuję do widzenia
+    - um ok, dziękuję do widzenia
+    - Dziękuję Ci
+    - i to wszystko dzięki i do widzenia
+    - dobrze dziękuję
+    - dzięki
+    - dziekuję, do widzenia
+    - dziękuję i do widzenia
+    - Dzięki!
+    - Świetnie, jesteś dobrym botem!
+    - wspaniały!
+    - Rozumiem, dzięki
+    - Oh to dobrze!
+    - to jest dobre :-)
+    - dzięki
+    - dobra robota bot
+    - wspaniały
+    - dzięki za pomoc
+    - dzięki Ci
+    - dzięki!
+    - Dziękuję Ci
+    - dzięki
+    - dzięki
+    - Dziękuję za informację
+    - dzięki f
 - intent: transfer_money
   examples: |
-    - I want to pay [John](PERSON)
-    - I want to transfer $100 to [Bob](PERSON)
-    - can i transfer money to [Sally](PERSON)
-    - I want to transfer money
-    - I want to pay someone
-    - can I pay someone
-    - I need to transfer money to a friend
-    - can I transfer money to my [mom](PERSON)
-    - I want to pay [Bert](PERSON)
-    - pay my friend
-    - transfer money
-    - I want to transfer $100 to [Tommy](PERSON)
-    - i want to transfer $400 to [Akela](PERSON)
-    - I want to pay [Paula Handy](PERSON)
-    - pay Katy Parrow $40 please
-    - transfer $60 to [Jason Jacob](PERSON)
-    - pay [Evan Oslo](PERSON)
-    - pay [Lisa](PERSON) please
-    - can I transfer money to [Kyle Gardner](PERSON)?
-    - Pay [Karen](PERSON) 60 Euros
-    - pay [Mona](PERSON) $60
-    - transfer $60 to [Sally](PERSON)
-    - need to transfer money
-    - II want to transfer to [Kelly](PERSON)
-    - Pay [Percy](PERSON) $50
-    - Pay $50 to [Pat](PERSON)
-    - Ok pay [Emma](PERSON)
-    - pay [Emanual](PERSON)
-    - i want to transfer $100 to [Jane smith](PERSON)
-    - i want to transfer $100 to my [daughter](PERSON)
-    - i want to transfer money please
-    - i mean i want to transfer money
-    - I need to pay a friend.
-    - transfer money to [ethan oswald](PERSON)
-    - transfer money to [sara](PERSON)
-    - I need to transfer money to my grandma [Judith](PERSON).
-    - i want to transfer money to [Latisha](PERSON)
+    - Chciałbym zapłacić [John](PERSON)
+    - Chcę przelać 100 zł do [Bob](PERSON)
+    - czy mogę przelać pieniądze dla [Sally](PERSON)
+    - Chcę przelać pieniądze
+    - Chcę komuś zapłacić
+    - czy mogę komuś zapłacić?
+    - Muszę przelać pieniądze znajomemu
+    - czy mogę przelać pieniądze dla mojej [mom](PERSON)
+    - chcę zapłacić [Bert](PERSON)
+    - zapłać przyjacielowi
+    - przelać pieniądze
+    - Chcę przelać 100 zł do [Tommy](PERSON)
+    - Chcę przelać 400 zł do  [Akela](PERSON)
+    - Chce przelać [Paula Handy](PERSON)
+    - zapłać 40 zł dla Katy Parrow przoszę
+    - przelej 60 zł dla [Jason Jacob](PERSON)
+    - zapłać [Evan Oslo](PERSON)
+    - zapłać [Lisa](PERSON) please
+    - Czy moję zrobić przelew do [Kyle Gardner](PERSON)?
+    - zapłać [Karen](PERSON) 60 złotych
+    - zapłać [Mona](PERSON) 60 zł
+    - przelej 60 zł [Sally](PERSON)
+    - musze wysłać moje pirniądze
+    - Chce wycłać pieniądze do [Kelly](PERSON)
+    - Zapłać [Percy](PERSON) 50 złotych
+    - Zapłać 50 złotych [Pat](PERSON)
+    - Ok zapłać [Emma](PERSON)
+    - zapłać [Emanual](PERSON)
+    - Chce wysłać 100 złotych do [Jane smith](PERSON)
+    - Chce wysłać 100 złotych do mojej [daughter](PERSON)
+    - chcę przelać pieniądze proszę
+    - to znaczy chcę przelać pieniądze
+    - Muszę zapłacić przyjacielowi.
+    - przelej pieniądze do [ethan oswald](PERSON)
+    - przelej pieniądze do [sara](PERSON)
+    - Muszę przelać pieniądze mojej babci [Judith](PERSON).
+    - chcę przelać pieniądze do[Latisha](PERSON)
     - I need to make an urgent transfer to [Bob](PERSON), can you do it?
-    - Ahh, okay so I want to make a transfer to [Bob](PERSON).
-    - Can I transfer money to a friend?
-    - I need to transfer money to [Jeff](PERSON), my son
-    - I need to send money to my kid
-    - I need to transfer money
-    - send $50 to [john jacob](PERSON)
-    - I need to transfer money to my co-worker who paid for lunch
-    - Hi I like to send money
-    - I'd like to send 50$ to [John](PERSON)
-    - Hi I like to send money to [John](PERSON)
-    - Please transfer 50 dollars to [Andreas](PERSON)
-    - I would like to transfer money to [Philipp](PERSON)
-    - I would like to transfer 50$ to [Joschka](PERSON)
+    - Ahh, ok, więc chcę zrobić przelew do [Bob](PERSON).
+    - Czy mogę przelać pieniądze znajomemu?
+    - Muszę przelać pieniądze do [Jeff](PERSON), my son
+    - Muszę wysłać pieniądze mojemu dziecku
+    - muszę przelać pieniądze
+    - wyślij 50 złotych [john jacob](PERSON)
+    - Muszę przelać pieniądze mojemu współpracownikowi, który zapłacił za lunch
+    - Cześć lubię wysyłać pieniądze
+    - chciałbym wysłać 50 złotych do [John](PERSON)
+    - Cześć, lubię wysyłać pieniądze do [John](PERSON)
+    - Proszę przelać 50 złotych do [Andreas](PERSON)
+    - Chciałbym przelać pieniądze do[Philipp](PERSON)
+    - Chciałbym przelać 50 zł do [Joschka](PERSON)
 - intent: check_recipients
   examples: |
-    - Who can I send money to?
-    - Who are my known recipients
-    - Show me my list of recipients
-    - Show the recipient list
-    - Show me people I can send money to
-    - Who is a valid payee
-    - who can I pay?
-    - who can I transfer money?
-    - who's in my recipient list?
-    - who can I transfer money to?
-    - Who is on your list?
-    - who is in my list of kown recipients?
-    - Who all can I transfer money to?
-    - Who can I transfer money to?
-    - Okay. Who can I transfer money to then?
-    - can I see the list of known recipients?
-    - tell me who I can share my money with
-    - whats my recipient list
-    - can I send money to anyone?
-    - who exactly am I able to send money to
-    - if I want to transfer money can i send it to anyone
-    - show me my money sending list
+    - Do kogo mogę wysłać pieniądze?
+    - Kim są moi znani odbiorcy
+    - Pokaż moją listę odbiorców
+    - Pokaż listę odbiorców
+    - Pokaż mi ludzi, do których mogę wysyłać pieniądze
+    - Kto jest prawidłowym odbiorcą płatności?
+    - komu mogę zapłacić?
+    - komu mogę przelać pieniądze?
+    - kto jest na mojej liście odbiorców?
+    - komu mogę przelać pieniądze?
+    - Kto jest na twojej liście?
+    - kto jest na mojej liście znanych odbiorców?
+    - Komu wszystkim mogę przelać pieniądze?
+    - Komu mogę przelać pieniądze?
+    - W porządku. Komu mogę wtedy przelać pieniądze?
+    - czy mogę zobaczyć listę znanych odbiorców?
+    - powiedz mi, z kim mogę podzielić się pieniędzmi
+    - jaka jest moja lista odbiorców?
+    - czy mogę komuś wysłać pieniądze?
+    - do kogo dokładnie mogę wysyłać pieniądze
+    - jeśli chcę przelać pieniądze, czy mogę wysłać je komukolwiek?
+    - pokaż moją listę wysyłania pieniędzy
 - intent: help
   examples: |
-    - help
-    - what can you do?
-    - what can I ask you?
-    - what do you do?
-    - what can you help me with?
-    - help me
-    - help, what do you do
-    - how do I use this
-    - how can you help me
-    - What are the things that you can do?
-    - What else can you help me with?
-    - can you do anything else?
-    - can you help me?
-    - come back
-    - cool! can I do something else here?
-    - hello what can you do for me
-    - help
-    - help me
-    - help please
-    - help pls
-    - help?
-    - hep me
+    - Wsparcie
+    - co możesz zrobić?
+    - o co mogę cię zapytać?
+    - co robisz?
+    - w czym możesz mi pomóc?
+    - Pomóż mi
+    - pomocy, co robisz you
+    - jak tego używać
+    - jak możesz mi pomóc
+    - Jakie są rzeczy, które możesz zrobić?
+    - W czym jeszcze możesz mi pomóc?
+    - czy możesz zrobić coś jeszcze?
+    - możesz mi pomóc?
+    - Wróć
+    - chłodny! czy mogę tutaj zrobić coś jeszcze?
+    - cześć co możesz dla mnie zrobić
+    - Wsparcie
+    - Pomóż mi
+    - prosimy o pomoc
+    - pomóż proszę
+    - Wsparcie?
+    - pomóż mi
 - intent: human_handoff
   examples: |
-    - handoff
+    - przekazanie
     - operator
-    - I want a human
-    - can I speak to an agent
-    - real agent please
-    - real human
-    - chat with a live agent
-    - give me a person please
-    - i want to talk to a human
-    - transfer to a human
-    - Please give me to a human
-    - can I talk to human?
-    - can I talk to human
-    - talk to human
-    - i want human :(
-    - can i talk to human
-    - i want to talk to a human
-    - i want to speak to human
-    - can i talk to a real person?
-    - connect me to a real person
-    - I need a real person
-    - can i took with a real person
-    - let me speak to a real person
-    - let me speak to a real person please
-    - i want to talk to a real person
+    - Chcę człowieka
+    - czy mogę porozmawiać z agentem?
+    - prawdziwy agent proszę agent
+    - prawdziwy człowiek
+    - porozmawiaj z agentem na żywo
+    - daj mi osobę proszę
+    - chcę porozmawiać z człowiekiem
+    - przeniesienie na człowieka
+    - Proszę, daj mnie człowiekowi
+    - czy mogę rozmawiać z człowiekiem?
+    - czy mogę rozmawiać z człowiekiem?
+    - porozmawiaj z człowiekiem
+    - chcę człowieka :(
+    - czy mogę rozmawiać z człowiekiem?
+    - chcę porozmawiać z człowiekiem
+    - chcę rozmawiać z człowiekiem
+    - czy mogę porozmawiać z prawdziwą osobą?
+    - połącz mnie z prawdziwą osobą
+    - potrzebuję prawdziwej osoby
+    - czy mogę zabrać z prawdziwą osobą?
+    - pozwól mi porozmawiać z prawdziwą osobą
+    - pozwól mi porozmawiać z prawdziwą osobą, proszę
+    - chcę porozmawiać z prawdziwą osobą
 - intent: out_of_scope
   examples: |
-    - what is the square root of 5
-    - I want to know the weather
-    - what is the meaning of life.
-    - Fridge Isn't Running
-    - my tv isn't working
-    - I want a pizza
-    - my washing machine isn't working
-    - what year is it
-    - order a pizza
-    - I want to order a pizza
-    - what is the weather today
-    - what is the weather
-    - what the weather today ?
-    - hows the weather
-    - tell me a joke
-    - Can I get a hamburger?
-    - Can YouTube talk?
-    - Can you call me back ?
-    - Can you give me your datacenter's password
-    - Can you give me your datacenter's password?
-    - Can you make sandwiches?
-    - Can you please send me an uber
-    - ofif fsdfafsfs
+    - jaki jest pierwiastek kwadratowy z 5
+    - Chcę poznać pogodę
+    - Jaki jest sens życia.
+    - Lodówka nie działa
+    - mój telewizor nie działa
+    - Chcę pizzę
+    - moja pralka nie działa
+    - jaki mamy rok?
+    - Zamów pizzę
+    - Chcę zamówić pizzę
+    - jaka jest dziś pogoda
+    - jaka jest pogoda
+    - jaka jest dzisiaj pogoda ?
+    - jaka jest pogoda
+    - Opowiedz mi dowcip
+    - Czy mogę dostać hamburgera?
+    - Czy YouTube może mówić?
+    - Oddzwonisz do mnie ?
+    - Czy możesz podać mi hasło do centrum danych?
+    - Czy możesz podać mi hasło do centrum danych?
+    - Umiesz robić kanapki?
+    - Czy możesz wysłać mi uber
+    - off fsdfafsfs
 - synonym: credit
   examples: |
-    - credit card
-    - credit cards
-    - credit account
-    - credit accounts
-    - card
-    - cards
-    - credit card account
+    - karta kredytowa
+    - karty kredytowe
+    - konto kredytowe
+    - rachunki kredytowe
+    - karta
+    - karty
+    - konto karty kredytowej
 - synonym: emblem
   examples: |
-    - emblm
-    - embelm
-    - Emblem
+    - emblemat
+    - emblematu
+    - Emblemat
 - synonym: current balance
   examples: |
-    - balance
-    - full
-    - full balance
+    - saldo
+    - pełny
+    - pełna równowaga
